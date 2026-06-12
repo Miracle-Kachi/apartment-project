@@ -13,6 +13,9 @@
 }
 #root {
   display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
   min-height: 100vh;
   min-width: 100%;
   position: relative;
@@ -25,14 +28,13 @@
   background-color: var(--sidebar-bg);
   min-width: 260px;
   max-height: 100vh;
-  padding: 1.3rem;
+  padding: 1.5rem;
   overflow: auto;
 }
 .main {
-  position: absolute;
-  top: 0;
-  left: 260px;
-  max-width: 900px;
+  margin-left: 17rem;
+  padding: 1.5rem;
+  width: 100%;
 }
 .sidebar-container {
   overflow: auto;
@@ -76,14 +78,6 @@
   border: none;
   text-align: left;
   padding: 0.5rem;
-}
-.main-image {
-  position: relative;
-}
-
-.main-image img {
-  width: 100%;
-  display: block;
 }
 
 /* for the image badge */
@@ -191,6 +185,7 @@
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 5;
   background: var(--black);
   color: white;
@@ -198,26 +193,24 @@
   display: none;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 img {
-  max-inline-size: 100%; 
-  block-size: auto; 
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 @media screen and (max-width: 500px) {
   .navbar {
     display: flex;
+    width: 100%;
   }
   .sidebar {
-    /* display: none; */
     transition: transform 1s ease;
     transform: translateX(-280px);
   }
   .main {
-    left: 0;
-    top: 5rem;
-    margin-top: 5rem;
+    margin: 10rem 0 0 0;
+    padding: .75rem;
   }
   .navbar button {
     border: none;
@@ -231,6 +224,9 @@ img {
   .sidebar.active {
     display: flex;
     transform: translateX(0);
+  }
+  .items{
+    width: 100%;
   }
   .overlay {
     position: absolute;
