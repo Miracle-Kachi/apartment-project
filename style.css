@@ -210,7 +210,7 @@ img {
   }
   .main {
     margin: 10rem 0 0 0;
-    padding: .75rem;
+    padding: 0.75rem;
   }
   .navbar button {
     border: none;
@@ -225,7 +225,7 @@ img {
     display: flex;
     transform: translateX(0);
   }
-  .items{
+  .items {
     width: 100%;
   }
   .overlay {
@@ -238,7 +238,7 @@ img {
     background-color: rgba(0, 0, 0, 0.692);
     display: none;
   }
-  .overlay.active{
+  .overlay.active {
     display: block;
   }
 }
