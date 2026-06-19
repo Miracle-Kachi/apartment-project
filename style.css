@@ -236,7 +236,7 @@ img {
     width: 100%;
   }
   .sidebar {
-    top: 4rem;
+    top: 3.5rem;
     height: calc(100% - 37px);
     max-width: 240px;
     transition: transform 0.3s ease;
